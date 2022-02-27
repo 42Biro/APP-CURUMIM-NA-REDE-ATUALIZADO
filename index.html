@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
+  
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,104 +11,113 @@
     <title>APP CURUMIM NA REDE</title>
     <script src='main.js'></script>
   </head>
+  
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <a class="navbar-brand" href="#" onclick="mostraPagina('#inicio')">Início</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false" aria-label="Alterna navegação">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menuNavbar">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="mostraPagina('#pontosturisticos')"
-              data-toggle="collapse" data-target="#menuNavbar">Pontos Turísticos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="mostraPagina('#conhecaoamazonas')"
-              data-toggle="collapse" data-target="#menuNavbar">Conheça o Amazonas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" onclick="mostraPagina('#contato')"
-                data-toggle="collapse" data-target="#menuNavbar">Contatos</a>
-            </li>
-            <li id="installAppBt" class="nav-item collapse">
-              <hr />
-              <a class="nav-link" href="#" onclick="installApp()"
-              data-toggle="collapse" data-target="#menuNavbar">Instalar APP</a>
+      <a class="navbar-brand" href="#" onclick="mostraPagina('#inicio')">Início</a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false"      aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="menuNavbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="mostraPagina('#pontosturisticos')" data-toggle="collapse" data-target="#menuNavbar">Pontos Turísticos</a>
           </li>
-          </ul>
-        </div>
-      </nav>
-      <main class="container w-100 h-100 p-2">
-        <section id="inicio" class="p-2 text-center h-100">
-          <h4 class="text-center">Seja Bem Vindo ao
-          </h4>
-          <img src="imagens/logo.png" class="p-2 w-50 mt-5">
-          <p class="text-center mt-5 p-2 texto2">Clique no menu e comece a navegar pelo app e não esqueça de conhecer a Revista Canoas
-          </p>
-          <img src="imagens/revistacanoas.png" class="w-75 mt-5 p-5">
-          <div>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="mostraPagina('#conhecaoamazonas')" data-toggle="collapse" data-target="#menuNavbar">Conheça o Amazonas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="mostraPagina('#contato')" data-toggle="collapse" data-target="#menuNavbar">Contatos</a>
+          </li>
+          <li id="installAppBt" class="nav-item collapse">
+            <hr>  <!-- um provável erro de digitação: "<hr />" -->
+            <a class="nav-link" href="#" onclick="installApp()" data-toggle="collapse" data-target="#menuNavbar">Instalar APP</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <main class="container w-100 h-100 p-2">
+      <section id="inicio" class="p-2 text-center h-100">
+        <h4 class="text-center">Seja Bem Vindo ao</h4>
+        <img src="imagens/logo.png" class="p-2 w-50 mt-5">
+        <p class="text-center mt-5 p-2 texto2">Clique no menu e comece a navegar pelo app e não esqueça de conhecer a Revista Canoas</p>
+        <img src="imagens/revistacanoas.png" class="w-75 mt-5 p-5">
+        <div>
           <a href="https://onedrive.live.com/?authkey=%21ANHk56TwKVGX3Ls&cid=33928EFB9C317D33&id=33928EFB9C317D33%211954&parId=33928EFB9C317D33%211945&o=OneUp" target="_blank" class="botao btn btn-primary btn-lg active" role="button" aria-pressed="true">Download Revista Canoas</a>
         </div>
-        </section>
-        <section id="sobre" class="sobre p-5 text-center collapse">
-            <img src="imagens/logo.png" class="center-block rounded border w-75 mt-4">
-            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste explicabo doloribus unde quia neque assumenda nobis distinctio, iure quaerat quam fuga voluptas soluta aut eligendi. Officiis harum explicabo hic.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste explicabo doloribus unde quia neque assumenda nobis distinctio, iure quaerat quam fuga voluptas soluta aut eligendi. Officiis harum explicabo hic.</p>
-        </section>
-        <section id="pontosturisticos" class="equipe mt-3 p-5 collapse">
-          <div class="card mb-3 card01">
-            <img class="card-img-top" src="imagens/cachoeira01.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title textocard01">Caverna do Maruaga</h5>
-              <p class="card-text subtextocard01">Entrada: R$100,00</p>
-            </div>
+      </section>
+      
+      <section id="sobre" class="sobre p-5 text-center collapse">
+        <img src="imagens/logo.png" class="center-block rounded border w-75 mt-4">
+        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste explicabo doloribus unde quia neque assumenda nobis distinctio, iure quaerat quam fuga voluptas soluta aut eligendi. Officiis harum explicabo hic.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste explicabo doloribus unde quia neque assumenda nobis distinctio, iure quaerat quam fuga voluptas soluta aut eligendi. Officiis harum explicabo hic.</p>
+      </section>
+      
+      <section id="pontosturisticos" class="equipe mt-3 p-5 collapse">
+        <div class="card mb-3 card01">
+          <img class="card-img-top" src="imagens/cachoeira01.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title textocard01">Caverna do Maruaga</h5>
+            <p class="card-text subtextocard01">Entrada: R$100,00</p>
           </div>
-          <div class="card mb-3 card02">
-            <img class="card-img-top" src="imagens/cachoeira02.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title textocard02">Caverna do Santuário</h5>
-              <p class="card-text subtextocard02">Entrada: R$10,00</p>
-            </div>
+        </div>
+        
+        <div class="card mb-3 card02">
+          <img class="card-img-top" src="imagens/cachoeira02.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title textocard02">Caverna do Santuário</h5>
+            <p class="card-text subtextocard02">Entrada: R$10,00</p>
           </div>
-          <div class="card mb-3 card03">
-            <img class="card-img-top" src="imagens/cachoeira03.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title textocard03">Caverna da Neblina</h5>
-              <p class="card-text subtextocard03">Entrada: Gratuita</p>
-            </div>
+        </div>
+        
+        <div class="card mb-3 card03">
+          <img class="card-img-top" src="imagens/cachoeira03.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title textocard03">Caverna da Neblina</h5>
+            <p class="card-text subtextocard03">Entrada: Gratuita</p>
           </div>
-        </section>
-        <section id="conhecaoamazonas" class="equipe mt-3 p-5 text-center collapse">  
-                <button type="button01" class="button01">
-                  <span class="button__text">História</span>
-                  <span class="button__icon">
-                    <img src="imagens/iconbook.svg" class="right-block rounded border w-50 mt-8">
-                  </span>
-                </button>
-        </section>
-        <section id="contato" class="sobre p-5 text-center collapse">
-            <img src="imagens/logo.png" class="center-block rounded border w-75 mt-4">
-            <h3>Entre em contato conosco</h3>
-            <p>
-                <a href="mailto:lucascruz99@gmail.com">
-                    <img class="w-25" src="imagens/mail.svg" />                
-                </a>
-            </p>
-            <p>
-                <a target="_blank" href="https://wa.me/5592999088799?text=Manda+Jobs%21%21">
-                    <img class="w-25" src="imagens/wpp-logo.svg" />
-                </a>
-            </p>
-            <p>
-                <a target="_blank" href="https://www.instagram.com/producoespicote/">
-                    <img class="w-25" src="imagens/ig-logo.svg" />
-                </a>
-            </p>  
-        </section>
-      </main>
+        </div>
+      </section>
+      
+      <section id="conhecaoamazonas" class="equipe mt-3 p-5 text-center collapse">
+        <button type="button01" class="button01">
+          <span class="button__text">História</span>
+          <span class="button__icon">
+            <img src="imagens/iconbook.svg" class="right-block rounded border w-50 mt-8">
+          </span>
+        </button>
+      </section>
+      
+      <section id="contato" class="sobre p-5 text-center collapse">  <!-- analisar a possibilidade de eliminar agrupamentos desneceçãrios ("<p>") ou trocar por agrupamento de lista ("<ul>") -->
+        <img src="imagens/logo.png" class="center-block rounded border w-75 mt-4">
+        
+        <h3>Entre em contato conosco</h3>
+        
+        <p><a href="mailto:lucascruz99@gmail.com">
+          <img class="w-25" src="imagens/mail.svg">  <!-- remoção de barra de fechamento ("/") desnecessária -->
+          </a>
+        </p>
+        
+        <p><a target="_blank" href="https://wa.me/5592999088799?text=Manda+Jobs%21%21">
+          <img class="w-25" src="imagens/wpp-logo.svg">  <!-- remoção de barra de fechamento ("/") desnecessária -->
+          </a>
+        </p>
+        
+        <p><a target="_blank" href="https://www.instagram.com/producoespicote/">
+          <img class="w-25" src="imagens/ig-logo.svg">  <!-- remoção de barra de fechamento ("/") desnecessária -->
+          </a>
+        </p>
+      </section>
+    </main>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
   </body>
 </html>
