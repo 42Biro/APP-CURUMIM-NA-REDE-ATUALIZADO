@@ -1,140 +1,180 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-html, body
-{
- margin: 0;
- padding: 0;
- height: 100%;
-}
-.bg-dark{
-background-color: rgb(26,26,26,255) !important;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
-h4{
-font-size: 2em;
+.bg-dark {
+    background-color: rgb(26,26,26,255) !important;
 }
 
-.texto1{
-color: rgb(126,126,126,255);
-font-weight: bold;
-font-family: Open sans;
-font-size: 1.25em;
+h4 {
+    font-size: 2em;
 }
 
-.texto2{
-color: rgb(126,126,126,255);
-font-weight: bold;
-font-family: Open sans;
-font-size: 1.25em;
+/*---------------------- TEXTS ------------------------>*/  
+
+.texto1 {
+    color: rgb(126,126,126,255);
+    font-weight: bold;
+    font-family: Open sans;
+    font-size: 1.25em;
 }
 
-.textocard01{
-color: rgba(240,182,77,255);
-font-family: Open sans;
-font-weight: bold;
-font-size: 1.50em;
+.texto2 {
+    color: rgb(126,126,126,255);
+    font-weight: bold;
+    font-family: Open sans;
+    font-size: 1.25em;
 }
 
-.subtextocard01{
-color: rgba(246,177,79,255);
-font-family: Open sans;
-font-weight: bold;
-font-size: 1.25em;
+.textocard01 {
+    color: rgba(240,182,77,255) !important;
+    font-family: Open sans;
+    font-weight: bold !important;
+    font-size: 1.50em;
 }
 
-.textocard02{
-color: rgba(248,234,177,255);
-font-family: Open sans;
-font-weight: bold;
-font-size: 1.50em;
+.subtextocard01 {
+    color: rgba(246,177,79,255);
+    font-family: Open sans;
+    font-weight: bold;
+    font-size: 1.25em;
 }
 
-.subtextocard02{
-color: rgba(248,234,177,255);
-font-family: Open sans;
-font-weight: bold;
-font-size: 1.25em;
+.textocard02 {
+    color: rgba(248,234,177,255);
+    font-family: Open sans;
+    font-weight: bold;
+    font-size: 1.50em;
 }
 
-.textocard03{
-color: rgba(164,119,74,255);
-font-family: Open sans;
-font-weight: bold;
-font-size: 1.50em;
+.subtextocard02 {
+    color: rgba(248,234,177,255);
+    font-family: Open sans;
+    font-weight: bold;
+    font-size: 1.25em;
 }
 
-.subtextocard03{
-color: rgba(164,119,74,255);
-font-family: Open sans;
-font-weight: bold;
-font-size: 1.25em;
+.textocard03 {
+    color: rgba(164,119,74,255);
+    font-family: Open sans;
+    font-weight: bold;
+    font-size: 1.50em;
 }
 
-.card01{
-background-color: rgb(255,132,71,255) !important;
-font-family: Open sans;
+.subtextocard03 {
+    color: rgba(164,119,74,255);
+    font-family: Open sans;
+    font-weight: bold;
+    font-size: 1.25em;
 }
 
-.card02{
-background-color: rgba(160,170,97,255) !important;
-font-family: Open sans;
+/*---------------------- CARDS ------------------------>*/    
+
+.card01 {
+    background-color: rgb(255,132,71,255) !important;
+    font-family: Open sans;
 }
 
-.card03{
-background-color: rgba(253,210,131,255) !important;
-font-family: Open sans;
+.card02 {
+    background-color: rgba(160,170,97,255) !important;
+    font-family: Open sans;
 }
 
-
-.botaodownload{
-display: inline-block;
-position: relative;
-font-family: Open sans;
-font-size: 1.25em;
-padding-top: 5px;
-margin-left: 0%;
-width: fit-content;
+.card03 {
+    background-color: rgba(253,210,131,255) !important;
+    font-family: Open sans;
 }
 
+/*---------------------- BUTTONS ------------------------>*/      
+
+.botaodownload {
+    display: inline-block;
+    position: relative;
+    background: rgb(255,132,71,255) !important;
+    font-family: Open sans;
+    font-size: 1.25em;
+    padding-top: 5px;
+    margin-left: 0%;
+}
 
 .button01 {
-display: inline-block;
-position: relative;
-background: rgb(255,132,71,255);
-border: none;
-outline: none;
-border-radius: 5px;
-overflow: hidden;
-font-family: "Open sans";
-font-size: 16px;
-font-weight: bold;
-cursor: pointer;
-}
-  
-  
-.button__text01{
-display: inline-block;
-position: relative;
-padding-top: 5px;
-margin-left: 5px;
-width: fit-content;
-color: rgba(246,177,79,255);
-font-family: Open sans;
-font-weight: bold;
-font-size: 1.25em;
+    position: relative !important;
+    background: rgb(255,132,71,255) !important;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "Open sans";
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 5px;
 }
 
-.button__icon01{
-display: inline-block;
-align-items: right;
-padding: 0 50%;
-color: none;
-height: 50%;
+.button02 {
+    position: relative !important;
+    background: rgb(160,170,97,255) !important;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "Open sans";
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 5px;
 }
 
-  
+.button03 {
+    position: relative !important;
+    background: rgb(253,210,131,255) !important;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "Open sans";
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
 
-.btn-primary{
+.button04 {
+    position: relative !important;
+    background: rgb(191,191,93,255) !important;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "Open sans";
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.button_text01 {
+    display: inline-block;
+    position: relative;
+    padding-top: 5px;
+    margin-left: 5px;
+    width: fit-content;
+    color: rgba(246,177,79,255);
+    font-family: Open sans;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.button_icon01 {
+    align-items: right;
+    color: none;
+    height: 50%;
+}
+
+.btn-primary {
     background-color: rgb(54,149,74,255) !important;
 }
-
