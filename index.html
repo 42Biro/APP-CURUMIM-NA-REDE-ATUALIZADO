@@ -1,175 +1,72 @@
-<!DOCTYPE html>
-
-
-<!------------------------- HEAD ------------------------------>
-
-
-<html lang="pt-br">
-  
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="manifest" href="manifest.json">
-    <title>APP CURUMIM NA REDE</title>
-    <script src='main.js'></script>
-  </head>
-  
-<!------------------------- MENU ------------------------------>
-
-
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <a class="navbar-brand" href="#" onclick="mostraPagina('#inicio')">Início</a>
-      
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false"      aria-label="Alterna navegação">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse" id="menuNavbar">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#" onclick="mostraPagina('#pontosturisticos')" data-toggle="collapse" data-target="#menuNavbar">Pontos Turísticos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" onclick="mostraPagina('#conhecaoamazonas')" data-toggle="collapse" data-target="#menuNavbar">Conheça o Amazonas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" onclick="mostraPagina('#contato')" data-toggle="collapse" data-target="#menuNavbar">Contatos</a>
-          </li>
-
-          <li id="installAppBt" class="nav-item collapse" style="display: list-item;">
-            <a class="nav-link" href="#" onclick="installApp()" data-toggle="collapse" data-target="#menuNavbar" aria-expanded="true">Instalar APP</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
+/**
+ * Versão do cache, é importante mudar o valor da variável 'version'
+ * toda vez que algum dos arquivos em no array 'arquivos' for modificado
+ * isso garante que a aplicação será atualizada nos clientes onde já exista
+ * um cache salvo
+ */
+ const version = 5
+ const cachename = 'app-cache-v'+version
+ 
+ /**
+  * Arquivos que serão salvos no cache para uso offline
+  * O caminho para os arquivos deve ser completo e sem o dominio
+  * Ex: arquivo logo.png
+  *      URL: https://bpvifsc.github.io/template-app-pwa/imagens/logo.png
+  *      Caminho: /template-app-pwa/imagens/logo.png
+  * Ou utilizar caminhos relativos ao arquivo html aberto
+  * Ex: arquivo aberto index.html (utilizar em PWA)
+  *      URL: https://bpvifsc.github.io/template-app-pwa/index.html
+  *      Caminho: ./imagens/logo.png
+  */
+ const arquivos = [
+     "./",
+     "./index.html",
+     "./main.js",
+     "./service-worker.js",
+     "./manifest.json",
+     "./estilos.css",
+     "./imagens/bootstrap.jpg",
+     "./imagens/ig-logo.svg",
+     "./imagens/linus-torvalds.jpg",
+     "./imagens/logo.png",
+     "./imagens/mail.svg",
+     "./imagens/tim-berners-lee.jpg",
+     "./imagens/wpp-logo.svg",
+     "./imagens/icone192.png",
+     "./imagens/icone512.png"
+   ]
+ 
+   /**
+    * Cria o cache dos arquivos
+    */
+   self.addEventListener('install', function(event) {
+     event.waitUntil(
+       caches.open(cachename).then(function(cache) {
+         return cache.addAll(arquivos);
+       })
+     );
+   });
    
-<!------------------------- INÍCIO ------------------------------> 
-
-    <main class="container w-100 h-100 p-2">
-      <section id="inicio" class="p-2 text-center h-100">
-
-
-
-        <h4 class="text-center">Seja Bem Vindo ao</h4>
-        <img src="imagens/logo.png" class="p-2 w-50 mt-5">
-        <p class="text-center mt-5 p-2 texto2">Clique no menu e comece a navegar pelo app e não esqueça de conhecer a Revista Canoas</p>
-        <img src="imagens/revistacanoas.png" class="w-75 mt-5 p-5">
-
-        <div class="button mb-1">
-          <a href="https://onedrive.live.com/?authkey=%21ANHk56TwKVGX3Ls&cid=33928EFB9C317D33&id=33928EFB9C317D33%211954&parId=33928EFB9C317D33%211945&o=OneUp" target="_blank" 
-          class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Download Revista Canoas</a>
-        </div>
-
-      </section>
-
-<!---------------------- PONTOS TURÍSTICOS ------------------------> 
-
-      <section id="pontosturisticos" class="equipe mt-3 p-5 collapse">
-
-
-        <div>
-          <a href="https://onedrive.live.com/?authkey=%21ANHk56TwKVGX3Ls&cid=33928EFB9C317D33&id=33928EFB9C317D33%211954&parId=33928EFB9C317D33%211945&o=OneUp" target="_blank" class="botao btn btn-primary btn-lg active" role="button" aria-pressed="true">Download Revista Canoas</a>
-        </div>
-      </section>
-      
-      <section id="sobre" class="sobre p-5 text-center collapse">
-        <img src="imagens/logo.png" class="center-block rounded border w-75 mt-4">
-        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste explicabo doloribus unde quia neque assumenda nobis distinctio, iure quaerat quam fuga voluptas soluta aut eligendi. Officiis harum explicabo hic.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste explicabo doloribus unde quia neque assumenda nobis distinctio, iure quaerat quam fuga voluptas soluta aut eligendi. Officiis harum explicabo hic.</p>
-      </section>
-      
-      <section id="pontosturisticos" class="equipe mt-3 p-5 collapse">
-
-        <div class="card mb-3 card01">
-          <img class="card-img-top" src="imagens/cachoeira01.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title textocard01">Caverna do Maruaga</h5>
-            <p class="card-text subtextocard01">Entrada: R$100,00</p>
-          </div>
-        </div>
-        
-        <div class="card mb-3 card02">
-          <img class="card-img-top" src="imagens/cachoeira02.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title textocard02">Caverna do Santuário</h5>
-            <p class="card-text subtextocard02">Entrada: R$10,00</p>
-          </div>
-        </div>
-        
-        <div class="card mb-3 card03">
-          <img class="card-img-top" src="imagens/cachoeira03.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title textocard03">Caverna da Neblina</h5>
-            <p class="card-text subtextocard03">Entrada: Gratuita</p>
-          </div>
-        </div>
-
-
-      </section>
-
-<!---------------------- CONHEÇA O AMAZONAS ------------------------>       
-      
-      <section id="conhecaoamazonas" class="equipe mt-3 p-5 text-center collapse">
-        
-        <div class="button01 navbar navbar-light bg-light">
-          <a class="navbar-brand" href="#">
-            <img src="imagens/icon01.svg" width="30" height="30" class="d-inline-block align-rigth" alt="">
-            História
-          </a>
-        </div>
-        <div class="button02 navbar navbar-light bg-light">
-          <a class="navbar-brand" href="#">
-            <img src="imagens/icon02.svg" width="30" height="30" class="d-inline-block align-rigth" alt="">
-            Patrimônio Material
-          </a>
-        </div>
-        <div class="button03 navbar navbar-light bg-light">
-          <a class="navbar-brand" href="#">
-            <img src="imagens/icon03.svg" width="30" height="30" class="d-inline-block align-rigth" alt="">
-            Patrimônio Naturial
-          </a>
-        </div>
-        <div class="button04 navbar navbar-light bg-light">
-          <a class="navbar-brand" href="#">
-            <img src="imagens/icon04.svg" width="30" height="30" class="d-inline-block align-rigth" alt="">
-            Patrimônio Imaterial
-          </a>
-        </div>
-      </section>
-      
-<!---------------------- CONTATO ------------------------>           
-
-      <section id="contato" class="sobre p-5 text-center collapse">  <!-- analisar a possibilidade de eliminar agrupamentos desneceçãrios ("<p>") ou trocar por agrupamento de lista ("<ul>") -->
-        <img src="imagens/logo.png" class="center-block rounded border w-75 mt-4">    
-
-        <h3>Entre em contato conosco</h3>
-        
-        <p><a href="mailto:lucascruz99@gmail.com">
-          <img class="w-25" src="imagens/mail.svg">  <!-- remoção de barra de fechamento ("/") desnecessária -->
-          </a>
-        </p>
-        
-        <p><a target="_blank" href="https://wa.me/5592999088799?text=Manda+Jobs%21%21">
-          <img class="w-25" src="imagens/wpp-logo.svg">  <!-- remoção de barra de fechamento ("/") desnecessária -->
-          </a>
-        </p>
-        
-        <p><a target="_blank" href="https://www.instagram.com/producoespicote/">
-          <img class="w-25" src="imagens/ig-logo.svg">  <!-- remoção de barra de fechamento ("/") desnecessária -->
-          </a>
-        </p>
-      </section>
-    </main>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  
-  </body>
-</html>
+   /**
+    * Verifica se existe uma versão em cache das páginas
+    * Caso não seja possivel retorna o match(index) da catch
+    * Está página pode ser tratada e retornar uma mensagem de erro/offline
+    */
+   self.addEventListener('fetch', function(event) {
+     event.respondWith(caches.match(event.request).then(function(response) {
+       if (response !== undefined) {
+         return response;
+       } else {
+         return fetch(event.request).then(function (response) {
+           let responseClone = response.clone();
+           
+           caches.open(cachename).then(function (cache) {
+             cache.put(event.request, responseClone);
+           });
+           return response;
+         }).catch(function () {
+           return caches.match('./index.html');
+         });
+       }
+     }));
+   });
