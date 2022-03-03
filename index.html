@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 
+
+<!------------------------- HEAD ------------------------------>
+
+
 <html lang="pt-br">
   
   <head>
@@ -12,6 +16,9 @@
     <script src='main.js'></script>
   </head>
   
+<!------------------------- MENU ------------------------------>
+
+
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <a class="navbar-brand" href="#" onclick="mostraPagina('#inicio')">Início</a>
@@ -31,20 +38,39 @@
           <li class="nav-item">
             <a class="nav-link" href="#" onclick="mostraPagina('#contato')" data-toggle="collapse" data-target="#menuNavbar">Contatos</a>
           </li>
-          <li id="installAppBt" class="nav-item collapse">
-            <hr>  <!-- um provável erro de digitação: "<hr />" -->
-            <a class="nav-link" href="#" onclick="installApp()" data-toggle="collapse" data-target="#menuNavbar">Instalar APP</a>
+
+          <li id="installAppBt" class="nav-item collapse" style="display: list-item;">
+            <a class="nav-link" href="#" onclick="installApp()" data-toggle="collapse" data-target="#menuNavbar" aria-expanded="true">Instalar APP</a>
           </li>
         </ul>
       </div>
     </nav>
-    
+
+   
+<!------------------------- INÍCIO ------------------------------> 
+
     <main class="container w-100 h-100 p-2">
       <section id="inicio" class="p-2 text-center h-100">
+
+
+
         <h4 class="text-center">Seja Bem Vindo ao</h4>
         <img src="imagens/logo.png" class="p-2 w-50 mt-5">
         <p class="text-center mt-5 p-2 texto2">Clique no menu e comece a navegar pelo app e não esqueça de conhecer a Revista Canoas</p>
         <img src="imagens/revistacanoas.png" class="w-75 mt-5 p-5">
+
+        <div class="button mb-1">
+          <a href="https://onedrive.live.com/?authkey=%21ANHk56TwKVGX3Ls&cid=33928EFB9C317D33&id=33928EFB9C317D33%211954&parId=33928EFB9C317D33%211945&o=OneUp" target="_blank" 
+          class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Download Revista Canoas</a>
+        </div>
+
+      </section>
+
+<!---------------------- PONTOS TURÍSTICOS ------------------------> 
+
+      <section id="pontosturisticos" class="equipe mt-3 p-5 collapse">
+
+
         <div>
           <a href="https://onedrive.live.com/?authkey=%21ANHk56TwKVGX3Ls&cid=33928EFB9C317D33&id=33928EFB9C317D33%211954&parId=33928EFB9C317D33%211945&o=OneUp" target="_blank" class="botao btn btn-primary btn-lg active" role="button" aria-pressed="true">Download Revista Canoas</a>
         </div>
@@ -57,6 +83,7 @@
       </section>
       
       <section id="pontosturisticos" class="equipe mt-3 p-5 collapse">
+
         <div class="card mb-3 card01">
           <img class="card-img-top" src="imagens/cachoeira01.jpg" alt="Card image cap">
           <div class="card-body">
@@ -80,20 +107,45 @@
             <p class="card-text subtextocard03">Entrada: Gratuita</p>
           </div>
         </div>
+
+
       </section>
+
+<!---------------------- CONHEÇA O AMAZONAS ------------------------>       
       
       <section id="conhecaoamazonas" class="equipe mt-3 p-5 text-center collapse">
-        <button type="button01" class="button01">
-          <span class="button__text">História</span>
-          <span class="button__icon">
-            <img src="imagens/iconbook.svg" class="right-block rounded border w-50 mt-8">
-          </span>
-        </button>
+        
+        <div class="button01 navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+            <img src="imagens/icon01.svg" width="30" height="30" class="d-inline-block align-rigth" alt="">
+            História
+          </a>
+        </div>
+        <div class="button02 navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+            <img src="imagens/icon02.svg" width="30" height="30" class="d-inline-block align-rigth" alt="">
+            Patrimônio Material
+          </a>
+        </div>
+        <div class="button03 navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+            <img src="imagens/icon03.svg" width="30" height="30" class="d-inline-block align-rigth" alt="">
+            Patrimônio Naturial
+          </a>
+        </div>
+        <div class="button04 navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+            <img src="imagens/icon04.svg" width="30" height="30" class="d-inline-block align-rigth" alt="">
+            Patrimônio Imaterial
+          </a>
+        </div>
       </section>
       
+<!---------------------- CONTATO ------------------------>           
+
       <section id="contato" class="sobre p-5 text-center collapse">  <!-- analisar a possibilidade de eliminar agrupamentos desneceçãrios ("<p>") ou trocar por agrupamento de lista ("<ul>") -->
-        <img src="imagens/logo.png" class="center-block rounded border w-75 mt-4">
-        
+        <img src="imagens/logo.png" class="center-block rounded border w-75 mt-4">    
+
         <h3>Entre em contato conosco</h3>
         
         <p><a href="mailto:lucascruz99@gmail.com">
