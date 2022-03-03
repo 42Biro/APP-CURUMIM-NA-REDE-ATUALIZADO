@@ -4,6 +4,9 @@ function mostraPagina(pg) {
     $(pgAtual).hide();
     $(pg).show();
     pgAtual = pg;
+
+    
+    $("#titulo").text($(pg).attr('titulo'));
 }
 
 if ('serviceWorker' in navigator) {
