@@ -4,6 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+
 }
 
 .bg-dark {
@@ -23,12 +24,6 @@ h4 {
     font-size: 1.25em;
 }
 
-.texto2 {
-    color: rgb(126,126,126,255);
-    font-weight: bold;
-    font-family: Open sans;
-    font-size: 1.25em;
-}
 
 .textocard01 {
     color: rgba(240,182,77,255) !important;
@@ -146,6 +141,85 @@ h4 {
 .button04 {
     position: relative !important;
     background: rgb(191,191,93,255) !important;
+=======
+.texto2 {
+    color: rgb(126,126,126,255);
+    font-weight: bold;
+    font-family: Open sans;
+    font-size: 1.25em;
+}
+
+.textocard01 {
+    color: rgba(240,182,77,255);
+    font-family: Open sans;
+    font-weight: bold;
+    font-size: 1.50em;
+}
+
+.subtextocard01 {
+    color: rgba(246,177,79,255);
+    font-family: Open sans;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.textocard02 {
+    color: rgba(248,234,177,255);
+    font-family: Open sans;
+    font-weight: bold;
+    font-size: 1.50em;
+}
+
+.subtextocard02 {
+    color: rgba(248,234,177,255);
+    font-family: Open sans;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.textocard03 {
+    color: rgba(164,119,74,255);
+    font-family: Open sans;
+    font-weight: bold;
+    font-size: 1.50em;
+}
+
+.subtextocard03 {
+    color: rgba(164,119,74,255);
+    font-family: Open sans;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.card01 {
+    background-color: rgb(255,132,71,255) !important;
+    font-family: Open sans;
+}
+
+.card02 {
+    background-color: rgba(160,170,97,255) !important;
+    font-family: Open sans;
+}
+
+.card03 {
+    background-color: rgba(253,210,131,255) !important;
+    font-family: Open sans;
+}
+
+.botaodownload {
+    display: inline-block;
+    position: relative;
+    font-family: Open sans;
+    font-size: 1.25em;
+    padding-top: 5px;
+    margin-left: 0%;
+    width: fit-content;
+}
+
+.button01 {
+    display: inline-block;
+    position: relative;
+    background: rgb(255,132,71,255);
     border: none;
     outline: none;
     border-radius: 5px;
@@ -157,7 +231,7 @@ h4 {
     margin-bottom: 5px;
 }
 
-.button_text01 {
+.button__text01 {
     display: inline-block;
     position: relative;
     padding-top: 5px;
@@ -169,8 +243,11 @@ h4 {
     font-size: 1.25em;
 }
 
-.button_icon01 {
+
+.button__icon01 {
+    display: inline-block;
     align-items: right;
+    padding: 0 50%;
     color: none;
     height: 50%;
 }
