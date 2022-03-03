@@ -141,7 +141,7 @@ h4 {
 .button04 {
     position: relative !important;
     background: rgb(191,191,93,255) !important;
-=======
+}
 .texto2 {
     color: rgb(126,126,126,255);
     font-weight: bold;
@@ -216,20 +216,6 @@ h4 {
     width: fit-content;
 }
 
-.button01 {
-    display: inline-block;
-    position: relative;
-    background: rgb(255,132,71,255);
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    overflow: hidden;
-    font-family: "Open sans";
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-bottom: 5px;
-}
 
 .button__text01 {
     display: inline-block;
@@ -252,6 +238,12 @@ h4 {
     height: 50%;
 }
 
+.icone{
+    position: absolute;
+    right: 15px;
+}
+
 .btn-primary {
     background-color: rgb(54,149,74,255) !important;
 }
+
