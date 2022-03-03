@@ -4,7 +4,7 @@
  * isso garante que a aplicação será atualizada nos clientes onde já exista
  * um cache salvo
  */
- const version = 5
+ const version = 6
  const cachename = 'app-cache-v'+version
  
  /**
