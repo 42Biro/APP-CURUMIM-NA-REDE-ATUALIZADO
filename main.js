@@ -21,6 +21,9 @@ var pedidoInstalacao; window.addEventListener('beforeinstallprompt', function(in
     }
 });
 
+var myCarousel = document.querySelector('#myCarousel')
+var carousel = new bootstrap.Carousel(myCarousel)
+
 function installApp() {
     pedidoInstalacao.prompt();
 }
