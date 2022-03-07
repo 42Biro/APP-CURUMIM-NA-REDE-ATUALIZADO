@@ -39,6 +39,13 @@ h4 {
     font-size: 1.25em;
 }
 
+.texto2 {
+    color: rgb(126,126,126,255);
+    font-weight: bold;
+    font-family: Open sans;
+    font-size: 1.25em;
+}
+
 .textocard02 {
     color: rgba(248,234,177,255);
     font-family: Open sans;
@@ -62,6 +69,20 @@ h4 {
 
 .subtextocard03 {
     color: rgba(164,119,74,255);
+    font-family: Open sans;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.subtextopontosturisticostitulo {
+    color: rgba(black);
+    font-family: Open sans;
+    font-weight: bold;
+    font-size: 1.50em;
+}
+
+.subtextopontosturisticossubtitulo {
+    color: rgba(black);
     font-family: Open sans;
     font-weight: bold;
     font-size: 1.25em;
@@ -142,54 +163,6 @@ h4 {
     position: relative !important;
     background: rgb(191,191,93,255) !important;
 }
-.texto2 {
-    color: rgb(126,126,126,255);
-    font-weight: bold;
-    font-family: Open sans;
-    font-size: 1.25em;
-}
-
-.textocard01 {
-    color: rgba(240,182,77,255);
-    font-family: Open sans;
-    font-weight: bold;
-    font-size: 1.50em;
-}
-
-.subtextocard01 {
-    color: rgba(246,177,79,255);
-    font-family: Open sans;
-    font-weight: bold;
-    font-size: 1.25em;
-}
-
-.textocard02 {
-    color: rgba(248,234,177,255);
-    font-family: Open sans;
-    font-weight: bold;
-    font-size: 1.50em;
-}
-
-.subtextocard02 {
-    color: rgba(248,234,177,255);
-    font-family: Open sans;
-    font-weight: bold;
-    font-size: 1.25em;
-}
-
-.textocard03 {
-    color: rgba(164,119,74,255);
-    font-family: Open sans;
-    font-weight: bold;
-    font-size: 1.50em;
-}
-
-.subtextocard03 {
-    color: rgba(164,119,74,255);
-    font-family: Open sans;
-    font-weight: bold;
-    font-size: 1.25em;
-}
 
 .card01 {
     background-color: rgb(255,132,71,255) !important;
@@ -215,7 +188,6 @@ h4 {
     margin-left: 0%;
     width: fit-content;
 }
-
 
 .button__text01 {
     display: inline-block;
@@ -245,5 +217,27 @@ h4 {
 
 .btn-primary {
     background-color: rgb(54,149,74,255) !important;
+}
+
+.buttonlocalizacao{
+    position: relative !important;
+    background-color: rgb(orange) !important;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "Open sans";
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+
+/*---------------------- CAROUSEL ------------------------>*/    
+
+.galery {
+    display: inline-block;
+    bottom: 20px;
+    color: none;
+    height: 100%;
 }
 
