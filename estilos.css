@@ -241,3 +241,8 @@ h4 {
     height: 100%;
 }
 
+.img {
+    display: inline-block;
+    bottom: 20px;
+    height: 100%;
+}
