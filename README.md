@@ -22,5 +22,5 @@ https://play.google.com/store/apps/details?id=com.curumimnarede
     #CORRIGIR CARROSEL (SUBPAGINAS "PONTOS TURISTICOS")
 
   - CONHEÇA O AMAZONAS
-    #CRIAR SUBPÁGINAS
+    #CRIAR SUBPÁGINAS (OK)
     
