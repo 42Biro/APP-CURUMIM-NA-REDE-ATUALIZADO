@@ -26,14 +26,14 @@ h4 {
 
 
 .textocard01 {
-    color: rgba(240,182,77,255) !important;
+    color: rgba(240,182,77,100) !important;
     font-family: Open sans;
     font-weight: bold !important;
     font-size: 1.50em;
 }
 
 .subtextocard01 {
-    color: rgba(246,177,79,255);
+    color: rgba(246,177,79,100);
     font-family: Open sans;
     font-weight: bold;
     font-size: 1.25em;
@@ -91,7 +91,7 @@ h4 {
 /*---------------------- CARDS ------------------------>*/    
 
 .card01 {
-    background-color: rgb(255,132,71,255) !important;
+    background-color: rgb(255,132,15,255) !important;
     font-family: Open sans;
 }
 
@@ -232,6 +232,7 @@ h4 {
 }
 
 
+
 /*---------------------- CAROUSEL ------------------------>*/    
 
 .galery {
@@ -246,3 +247,4 @@ h4 {
     bottom: 20px;
     height: 100%;
 }
+
