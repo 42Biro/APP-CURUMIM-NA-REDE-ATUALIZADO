@@ -4,7 +4,7 @@
  * isso garante que a aplicação será atualizada nos clientes onde já exista
  * um cache salvo
  */
-const version = 11
+const version = 12
 const cachename = 'app-cache-v'+version
 
 /**
@@ -58,6 +58,9 @@ const arquivos = [
       "./imagens/img03.jpeg",
       "./imagens/img04.jpeg",
       "./imagens/logopicote.png",
+      "./imagens/gmail.jpeg",
+      "./imagens/whatsapp.svg",
+      "./imagens/instagram.pngq",
 ]
 /**
     * Cria o cache dos arquivos
